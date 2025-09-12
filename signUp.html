@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h1>Sign Up</h1>
+            <p>Welcome let's create your account</p>
+        </div>
+        
+        <form action="">
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Confirm Password</label>
+            <input type="password" id="password" name="password" placeholder="Confirm your password" required>
+        </div>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms" class="terms">
+                I agree to the <a href="#" target="_blank">Terms & Conditions</a>
+            </label><br><br>
+            <button type="submit" class="login-button"><a href="index.html">Sign Up</a></button>
+    </form>
+        <div class="divider">
+            <span>or continue with</span>
+        </div>
+        <div class="socia-login">
+            <button class="socia-button">Google</button>
+            <button class="socia-button">Github</button>
+        </div>
+        <div class="signup-link">
+            Already have an account <a href="login.html">Sign In</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+:root {
+    --spider-red: #dc2626;
+    --spider-blue: #3b82f6;
+    --spider-white: #ffffff;
+    --spider-light: #fef2f2;
+    --spider-dark: #374151;
+    --spider-border: #e5e7eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: linear-gradient(135deg, var(--spider-light) 0%, var(--spider-white) 100%);
+    color: var(--spider-dark);
+    overflow-x: hidden;
+}
+
+.hero-section {
+    background: url('marvels-spider-man-4096x1738-13276.jpeg') center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 1px, transparent 1px),
+        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 1px, transparent 1px),
+        radial-gradient(circle at 40% 40%, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 50px 50px, 80px 80px, 100px 100px;
+    pointer-events: none;
+}
+
+.hero-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--spider-white);
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--spider-light);
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.btn-spider {
+    background: var(--spider-red);
+    border: none;
+    color: var(--spider-white);
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-spider:hover {
+    background: #b91c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4);
+    color: var(--spider-white);
+}
+
+.section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--spider-red);
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--spider-blue);
+    border-radius: 2px;
+}
+
+.character-card {
+    background: var(--spider-white);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.character-card a{
+    color: var(--spider-red);
+    text-decoration: none;
+}
+
+.character-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(220, 38, 38, 0.2);
+    border-color: var(--spider-red);
+}
+
+.character-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.character-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--spider-red);
+    margin-bottom: 1rem;
+}
+
+.character-description {
+    color: var(--spider-dark);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.navbar-spider {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: var(--spider-red) !important;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: var(--spider-dark) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--spider-red) !important;
+}
+
+.stats-section {
+    background: var(--spider-red);
+    color: var(--spider-white);
+    padding: 4rem 0;
+}
+
+.stat-item {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.stat-number {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    display: block;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.footer-spider {
+    background: var(--spider-dark);
+    color: var(--spider-white);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
