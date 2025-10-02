@@ -147,29 +147,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-    // Function to get query parameters
-    function getQueryParam(param) {
-        let urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(param);
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-        let user = getQueryParam("user");
-
-        if(user){
-            Swal.fire({
-                icon: "success",
-                title: "Welcome!",
-                text: "Hello, " + user + "! 👋",
-                confirmButtonText: "Continue"
-            });
-        }else{
-            // If no user is found in the URL, redirect back
-            window.location.href = "https://johnloydwasquin.github.io/LoginProject/";
-        }
-    });
-</script>
-
 </body>
 </html>
