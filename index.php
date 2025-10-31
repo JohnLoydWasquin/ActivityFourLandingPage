@@ -9,31 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-spider fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Spider-Man</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#characters">Characters</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    <?php include("header.php")?>
     <section id="home" class="hero-section">
         <div class="web-pattern"></div>
         <div class="container">
@@ -138,13 +114,14 @@
         </div>
     </section>
 
-    <footer class="footer-spider">
-        <div class="container">
-            <p>&copy; 2025 Spider-Man Universe. With great power comes great responsibility.</p>
-            <p class="mb-0">Your Friendly Neighborhood Web-Slinger</p>
-        </div>
-    </footer>
+    <?php include("footer.php") ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery Validation Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
